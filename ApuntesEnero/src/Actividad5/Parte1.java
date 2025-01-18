@@ -51,4 +51,5 @@ public class Parte1 {
         Arrays.sort(cadenas);
         return cadenas[cadenas.length / 2];
     }
+    
 }
