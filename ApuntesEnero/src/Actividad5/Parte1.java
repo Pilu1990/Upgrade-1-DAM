@@ -9,6 +9,11 @@ public class Parte1 {
 * Media (int[]): Calcula la media de un arreglo de números enteros.
 * Moda (double[]): Encuentra el valor más frecuente en un arreglo de números decimales.
 * Mediana (String[]): Determina la mediana (orden alfabético) de un arreglo de cadenas.
+
+Comentario para la actividad de Entornos de Desarrollo:
+  Commit es justo lo que estoy haciendo, guardar los cambios en el repositorio local registrando su estado. 
+  Un Push es mandar los cambios del repositorio local al remoto.
+  un Pull es lo contrario, del remoto al local.
  */
 
  public static void main(String[] args) {

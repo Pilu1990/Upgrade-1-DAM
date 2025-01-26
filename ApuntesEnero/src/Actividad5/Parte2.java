@@ -23,7 +23,7 @@ public class Parte2 {
         scanner.close();
 
         if (n < k) {
-            System.out.println("El tamaño del conj-1unto debe ser mayor o igual al tamaño del subconjunto.");
+            System.out.println("El tamaño del conjunto debe ser mayor o igual al tamaño del subconjunto.");
         }
         else if (n < 0 || k < 0) {
             System.out.println("El tamaño del conjunto y del subconjunto deben ser mayores o iguales a 0.");
