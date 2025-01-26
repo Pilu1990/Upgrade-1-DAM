@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Parte2 {
 /*
  * Descripción: Escribe un programa que calcule las combinaciones posibles de n elementos tomados de k en k utilizando recursividad. Una combinación es un subconjunto de tamaño k extraído de un conjunto den elementos.
-* Fórmula de combinaciones: C(n, k) = \begin{cases} 1, & \text{si } k = 0 \text{ o } k = n \\ C(n-1, k-1) + C(n-1, k), & \text{si } 0 < k < n \end{cases}
 * Requisitos
 * El usuario debe ingresar n (el tamaño del conjunto) y k (el tamaño del subconjunto).
 * Usa recursividad para calcular el número total de combinaciones.
