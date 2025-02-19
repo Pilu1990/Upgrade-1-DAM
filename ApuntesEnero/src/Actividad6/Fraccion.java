@@ -17,6 +17,8 @@ public class Fraccion {
      */
     private int denominador;
 
+
+
     /**
      * Constructor sin parámetros.
      * Inicializa la fracción como 0/1.
@@ -24,6 +26,7 @@ public class Fraccion {
     public Fraccion() {
         this.numerador = 0;
         this.denominador = 1;
+    
     }
 
     /**
@@ -38,6 +41,8 @@ public class Fraccion {
         }
         this.numerador = numerador;
         this.denominador = denominador;
+        
+        simplificar();
     }
 
     /**
@@ -94,6 +99,31 @@ public class Fraccion {
     public String toString() {
         return numerador + "/" + denominador;
     }
+ 
+   private int calcularMCD (int a, int b){
+    while (b != 0){
+        int temporal = b;
+        b= a % b;
+        a = temporal;
+        }
+        return a;
+}
+
+/*Simplifica la fracción dividiendo numerador y denominador por su máximo común divisor */
+
+public void simplificar(){
+    int mcd = calcularMCD(Math.abs(numerador), denominador);
+    numerador = numerador / mcd;
+    denominador = denominador / mcd;
 
 }
 
+
+public Fraccion sumar(Fraccion frac){
+    int numeradorNuevo = numerador * frac.getDenominador() + denominador * frac.getNumerador();
+    int denominadorNuevo = denominador * frac.getDenominador();
+    Fraccion resultado = new Fraccion(numeradorNuevo, denominadorNuevo);
+    resultado.simplificar();
+    return resultado;
+}
+}
